@@ -1,0 +1,136 @@
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    border-bottom: 3px solid #000;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, #f5f5f5, #eaeaea);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    color: #1a1a1a;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #0056b3;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+button {
+    margin: 5px;
+    padding: 8px 15px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background: #fafafa;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+    color: white;
+    border-color: #0056b3;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    padding: 25px;
+}
+
+article, aside, section {
+    background: #fafafa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+    color: #0056b3;
+}
+
+.descripcion p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Contenido del libro */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.grid.filas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.grid .item {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #bbb;
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+/* Imagen del libro */
+#contenedor-imagen img {
+    display: block;
+    margin: 15px auto 0;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+footer {
+    border-top: 3px solid #000;
+    text-align: center;
+    padding: 18px;
+    font-size: 0.9rem;
+    margin-top: 25px;
+    background: #f5f5f5;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}

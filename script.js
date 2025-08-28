@@ -6,13 +6,13 @@ function toggleContenido() {
 
 function cambiarTitulo() {
     const title = document.getElementById("main-title");
-    title.textContent = "Título cambiado con JavaScript";
+    title.textContent = "PRIMERA PRACTICA EN HTML Y CSS";
 }
 
 function cambiarDescripcion() {
     const subtitulo = document.getElementById("subtitulo");
     const parrafo = document.getElementById("parrafo");
-    subtitulo.style.color = subtitulo.style.color === "red" ? "#0056b3" : "red";
+    subtitulo.style.color = subtitulo.style.color === "green" ? "#0056b3" : "green";
     parrafo.style.color = parrafo.style.color === "gray" ? "#222" : "gray";
 }
 
